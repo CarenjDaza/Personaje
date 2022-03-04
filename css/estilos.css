@@ -1,12 +1,30 @@
-h1{color:#473A97}
-h1{font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif}
-p{font-family:cursive}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+
+h1{color:var(--dark)}
+h1{font-family: 'Lobster', cursive;}
+p{font-family: 'Arvo', serif;}
 p{color:darkslategray;}
 h1{font-size: 70px;}
 body{background-color: #A0A48A;}
 
+:root{
+  beige-color#EBE3A3;
+  dark-color: #ffffff;
+  white-color:#999999;
+  gray-color: rgb(204,212,222);
+  blue-color:#90E7FC;
+}
+.header{
+  font-size: 40px;
+  text-align:center;
+}
 
-
+.header img{
+  max-width: 100%;
+  
+}
 .inicio {
     width: 800px;
     height: auto;
@@ -40,9 +58,9 @@ body{background-color: #A0A48A;}
 
 .inicio h1 {
     color: aliceblue;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     margin:0px;
     text-shadow:3px 3px 5px #8EEBE3;
-
 }
+
+
