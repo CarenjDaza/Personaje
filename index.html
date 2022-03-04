@@ -18,21 +18,27 @@
 <body>
 
     <header class="header">
-        <H1>Jhonny Deep</H1>
+        <H1>Johnny Depp</H1>
         <img src="img/Personajes Johnny Depp.png">
     </header>
 
     <NAv>
-        <a href="index.html" class="item">Quien Es Jhonny Deep</a>
-        <a href="peliculas.html" class="item">Peliculas</a>
-        <a href="carrera.html" class="item">Carrera Musical</a>
-        <a href="apoyo_social.html" class="item">Apoyo Social</a>
-        <a href="premios.html" class="item">Premios y Nominaciones</a>
-        <a href="quienes.html" class="item">Quien es el personaje</a>
+        <div>
+            <a href="index.html" class="item">Quien Es Johnny Depp</a>
+            <a href="peliculas.html" class="item">Peliculas</a>
+            <a href="carrera.html" class="item">Mas sobre Johnny</a>
+            </div>
+            <div>
+                <form action="#" name="buscar" method="get" target="_self"> 
+                    <label for="buscar">Buscar</label>
+                        <input type="search" id="buscar" name="buscar" placeholder="buscar"> 
+                        <input type="submit" value="ir">
+                </form>
+            </div>
     </NAv>
     <main>
         <section id="biografia">
-            <H2>¿Quien es Johnny Deep?</H2>
+            <H2>¿Quien es Johnny Depp?</H2>
             <p>
                 John Christopher Depp II, Nacio en Owensboro, Kentucky, el 9 de junio de 1963, es de nacionalidad
                 Estadounidense, hijo de John Christopher Depp un ingeniero civil y de Betty Sue Palmer —cuyo apellido de
@@ -78,9 +84,9 @@
                 ¿Y su vida sentimental?
             </h1>
             <p>
-                Jhonny ha tenido varias parejas a lo largo de su vida, entre ellas:
+                Johnny ha tenido varias parejas a lo largo de su vida, entre ellas:
             </p>
-            <ul type="<box-icon type='solid' name='star'></box-icon>">
+            <ul style="list-style-image: url(img/star-solid.svg) ;"> 
                 <li>Lori Anne Allison</li>
                 <li>Sherilyn Fenn</li>
                 <li>Winona Ryder</li>
@@ -90,59 +96,88 @@
             </ul>
         </div>
     </div>
+    <div>
+        <H2>¿Quieres saber mas? ¡Suscribete!</H2>
     <form action="#" method="get" accept-charset="utf-8" name="suscribete">
      <h2></h2>
       <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
       <label for="password">Contraseña:</label>
-      <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña"/>
+        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña"/>
       <label for="telefono">Telefono:</label>
-      <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu # de telefono"/>
+        <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu # de telefono"/>
       <label for="email">Correo electronico:</label>
-      <input type="email" name="email" id="email" placeholder="Ingresa tu correo electronico"/>
-     <label for="fnacimiento">Fecha de Nacimiento:</label>
-      <input type="date" name="fnacimiento" id="fnacimiento"/>
-      <label for="nombre"></label>
-      <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
-      
-      
+        <input type="email" name="email" id="email" placeholder="Ingresa tu correo electronico"/>
+      <label for="fnacimiento">Fecha de Nacimiento:</label>
+        <input type="date" name="fnacimiento" id="fnacimiento"/>
+      <label for="edad"></label>
+        <input type="number" name="edad" id="edad" placeholder="Ingresa tu edad"/>
+      <label for="ecivil">Indique su estado civil</label>
+        <input name="ecivil" id="ecivil" type="radio" checked>Soltero
+        <input name="ecivil" id="ecivil" type="radio">Casado
+        <input name="ecivil" id="ecivil" type="radio">Union libre
+        <input name="ecivil" id="ecivil" type="radio">Viudo
+        <input name="ecivil" id="ecivil" type="radio">Divorciado 
+      <label for="ciudad">¿En que ciudad vives?</label>
+        <select name="ciudad" id="ciudad">
+            <option value="0" selected>Elige una ciudad</option>
+        <optgroup label="Cundinamarca">
+            <option value="1">Bogotá</option>
+            <option value="2">Soacha</option>
+            <option value="3">Chia</option>
+        </optgroup>
+        <optgroup label="Antioquia">
+            <option value="4">Medellin</option>
+            <option value="5">Rionegro</option>
+            <option value="6">Envigado</option>
+        </optgroup>
+        <optgroup label="Valle del Cauca">
+            <option value="7">Cali</option>
+            <option value="8">Jamundi</option>
+            <option value="9">Buga</option>
+        </optgroup>
+            <optgroup label="Santander">
+            <option value="10">Bucaramanga</option>
+            <option value="11">Floridablanca</option>
+        </optgroup>
+        </select>
+      <label for="personaje">¿Cual es tu personaje favorito de Johnny?</label> 
+        <input name="personaje" id="personaje" type="checkbox"> El sombrerero
+        <input name="personaje" id="personaje" type="checkbox"> Edward Mano de tijeras
+        <input name="personaje" id="personaje" type="checkbox"> Jack Sparrow
+        <input name="personaje" id="personaje" type="checkbox"> Willi Wonka
+        <input name="personaje" id="personaje" type="checkbox"> Otro
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Borrar">
       
     </form>
-   
-
+    </div>  
     <footer class="footer">
     
-            <div class="box-footer">
-                <div class="foot">
-                    <img src="img/bxl-facebook.svg" alt="Facebook">
-                    <h3>Facebook</h3>
-                    <p>
-                        https://www.facebook.com/JohnnyDepp     
-                    </p>
-                </div>
-                <div class="foot">
-                    <img src="img/bxl-instagram.svg" alt="Instagram">
-                    <h3>Instagram</h3>
-                    <p>
-                        https://www.instagram.com/johnnydepp/?hl=es    
-                    </p>
-                </div>
-                <div class="foot">
-                    <img src="img/bxl-youtube.svg" alt="Youtube">
-                    <h3>Youtube</h3>
-                    <p>
-                        https://www.youtube.com/channel/UCt1esA_d0ER-HI6j05W8iow  
-                    </p>
-                </div>
-                <div class="foot">
-                    <img src="img/bx-world.svg" alt="Pagina Web">
-                    <h3>Sitio Oficial</h3>
-                    <p>
-                        http://www.samuelgoldwynfilms.com/minamata/ 
-                    </p>
-                </div>
+        <div class="box-footer">
+            <div class="foot">
+                <p>
+                   <a href="https://www.facebook.com/JohnnyDepp" target="_blank" > <img src="img/bxl-facebook.svg" alt="Facebook">Facebook </a> 
+                </p>
             </div>
-    </footer>
+            <div class="foot">
+                <p>
+                    <a href="https://www.instagram.com/johnnydepp/?hl=es" target="_blank"><img src="img/bxl-instagram.svg" alt="Instagram"> Instagram</a>   
+                </p>
+            </div>
+            <div class="foot">
+                <p>
+                    <a href="https://www.youtube.com/channel/UCt1esA_d0ER-HI6j05W8iow" target="_blank" ><img src="img/bxl-youtube.svg" alt="Youtube"> Youtube </a>
+                </p>
+            </div>
+            <div class="foot">
+                <p>
+                   <a href="http://www.samuelgoldwynfilms.com/minamata/" target="_blank"><img src="img/bx-world.svg" alt="Pagina Web">Sitio Oficial</a>
+                </p>
+            </div>
+        </div>
+</footer>
+
 </body>
 
 </html>
