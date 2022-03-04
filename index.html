@@ -74,7 +74,7 @@
             <article class="seccion">
                 <img src="img/jhonny_deep.jpg">
             <ol class="quien_es">
-                <h2>¿Quien es?</h2>
+                <h2>¿Que hace?</h2>
                 <p> Johnny tiene diferentes facetas en su vida y en cada una de ellas nos ha logrado sorprender, él es:</p>
                 <li>Actor</li>
                 <li>Productor</li>
@@ -100,83 +100,109 @@
             </article>
         </section>
     </main>
-    <div>
-        <H2>¿Quieres saber mas? ¡Suscribete!</H2>
+        <H2 class="titulo2">¿Quieres saber más? ¡Suscríbete!</H2>
     <form action="#" method="get" accept-charset="utf-8" name="suscribete" class="form">
-     <h2></h2>
-      <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
-      <label for="password">Contraseña:</label>
-        <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña"/>
-      <label for="telefono">Telefono:</label>
-        <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu # de telefono"/>
-      <label for="email">Correo electronico:</label>
-        <input type="email" name="email" id="email" placeholder="Ingresa tu correo electronico"/>
-      <label for="fnacimiento">Fecha de Nacimiento:</label>
-        <input type="date" name="fnacimiento" id="fnacimiento"/>
-      <label for="edad"></label>
-        <input type="number" name="edad" id="edad" placeholder="Ingresa tu edad"/>
-      <label for="ecivil">Indique su estado civil</label>
-        <input name="ecivil" id="ecivil" type="radio" checked>Soltero
-        <input name="ecivil" id="ecivil" type="radio">Casado
-        <input name="ecivil" id="ecivil" type="radio">Union libre
-        <input name="ecivil" id="ecivil" type="radio">Viudo
-        <input name="ecivil" id="ecivil" type="radio">Divorciado 
-      <label for="ciudad">¿En que ciudad vives?</label>
-        <select name="ciudad" id="ciudad">
-            <option value="0" selected>Elige una ciudad</option>
-        <optgroup label="Cundinamarca">
-            <option value="1">Bogotá</option>
-            <option value="2">Soacha</option>
-            <option value="3">Chia</option>
-        </optgroup>
-        <optgroup label="Antioquia">
-            <option value="4">Medellin</option>
-            <option value="5">Rionegro</option>
-            <option value="6">Envigado</option>
-        </optgroup>
-        <optgroup label="Valle del Cauca">
-            <option value="7">Cali</option>
-            <option value="8">Jamundi</option>
-            <option value="9">Buga</option>
-        </optgroup>
-            <optgroup label="Santander">
-            <option value="10">Bucaramanga</option>
-            <option value="11">Floridablanca</option>
-        </optgroup>
-        </select>
-      <label for="personaje">¿Cual es tu personaje favorito de Johnny?</label> 
-        <input name="personaje" id="personaje" type="checkbox"> El sombrerero
-        <input name="personaje" id="personaje" type="checkbox"> Edward Mano de tijeras
-        <input name="personaje" id="personaje" type="checkbox"> Jack Sparrow
-        <input name="personaje" id="personaje" type="checkbox"> Willi Wonka
-        <input name="personaje" id="personaje" type="checkbox"> Otro
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Borrar">
-      
-    </form>
-    </div>  
+    <div class="section1">
+        <div class="form-group">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" class="form-input" name="nombre" id="nombre" placeholder="Ingresa tu nombre"/>
+        </div>
+        <div class="form-group">
+            <label for="password" class="form-label">Contraseña:</label>
+            <input type="password" class="form-input" name="password" id="password" placeholder="Ingresa tu contraseña"/>
+        </div>
+        <div class="form-group">
+            <label for="telefono" class="form-label">Telefono:</label>
+            <input type="tel" class="form-input" name="telefono" id="telefono" placeholder="Ingresa tu # de telefono"/>
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Correo electronico:</label>
+            <input type="email" class="form-input" name="email" id="email" placeholder="Ingresa tu correo electronico"/>
+        </div>
+        <div class="form-group">
+            <label for="fnacimiento" class="form-label">Fecha de Nacimiento:</label>
+            <input type="date" class="form-input" name="fnacimiento" id="fnacimiento"/>
+        </div>
+        <div class="form-group">
+            <label for="edad" class="form-label">Ingresa tu edad</label>
+            <input type="number" class="form-input" name="edad" id="edad" placeholder="Ingresa tu edad"/>
+        </div>
+        <div class="form-group">
+        <label for="ciudad" class="form-label">¿En que ciudad vives?</label>
+            <select name="ciudad" class="form-input" id="ciudad">
+                <option value="0" selected>Elige una ciudad</option>
+            <optgroup label="Cundinamarca" >
+                <option value="1">Bogotá</option>
+                <option value="2">Soacha</option>
+                <option value="3">Chia</option>
+            </optgroup>
+            <optgroup label="Antioquia">
+                <option value="4">Medellin</option>
+                <option value="5">Rionegro</option>
+                <option value="6">Envigado</option>
+            </optgroup>
+            <optgroup label="Valle del Cauca">
+                <option value="7">Cali</option>
+                <option value="8">Jamundi</option>
+                <option value="9">Buga</option>
+            </optgroup>
+                <optgroup label="Santander">
+                <option value="10">Bucaramanga</option>
+                <option value="11">Floridablanca</option>
+            </optgroup>
+            </select>
+        </div>
+    </div>
+    <div class="section1">
+        <div class="form-group">
+            <label for="ecivil" class="form-label">Indique su estado civil</label>
+        </div>
+        <div class="radio">
+            <input name="ecivil" id="ecivil" class="select" type="radio" checked>Soltero
+            <input name="ecivil" id="ecivil" class="select" type="radio">Casado
+            <input name="ecivil" id="ecivil" class="select" type="radio">Union libre
+            <input name="ecivil" id="ecivil" class="select" type="radio">Viudo
+            <input name="ecivil" id="ecivil" class="select" type="radio">Divorciado 
+        </div>
+        <div class="form-group">
+            <label for="personaje" class="form-label">¿Cual es tu personaje favorito de Johnny?</label>
+            <div class="radio"> 
+                <input name="personaje" class="select" id="personaje" type="checkbox"> El sombrerero
+                <input name="personaje" class="select" id="personaje" type="checkbox"> Edward Mano de tijeras
+                <input name="personaje" class="select" id="personaje" type="checkbox"> Jack Sparrow
+                <input name="personaje" class="select" id="personaje" type="checkbox"> Willi Wonka
+                <input name="personaje" class="select" id="personaje" type="checkbox"> Otro
+            </div>
+        </div>
+        <div class="btn">
+        <input type="submit" class="btn-azul" value="Enviar">
+        <input type="reset" class="btn-azul" value="Borrar">    
+        </div>    
+        
+    </div>
+    </form> 
+    
     <footer class="footer">
     
         <div class="box-footer">
             <div class="foot">
                 <p>
-                   <a href="https://www.facebook.com/JohnnyDepp" target="_blank" > <img src="img/bxl-facebook.svg" alt="Facebook">Facebook </a> 
+                   <a href="https://www.facebook.com/JohnnyDepp"  target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a> 
                 </p>
             </div>
             <div class="foot">
                 <p>
-                    <a href="https://www.instagram.com/johnnydepp/?hl=es" target="_blank"><img src="img/bxl-instagram.svg" alt="Instagram"> Instagram</a>   
+                    <a href="https://www.instagram.com/johnnydepp/?hl=es" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>   
                 </p>
             </div>
             <div class="foot">
                 <p>
-                    <a href="https://www.youtube.com/channel/UCt1esA_d0ER-HI6j05W8iow" target="_blank" ><img src="img/bxl-youtube.svg" alt="Youtube"> Youtube </a>
+                    <a href="https://www.youtube.com/channel/UCt1esA_d0ER-HI6j05W8iow" target="_blank" ><i class="fa-brands fa-youtube"></i> Youtube </a>
                 </p>
             </div>
             <div class="foot">
-                <p>
-                   <a href="http://www.samuelgoldwynfilms.com/minamata/" target="_blank"><img src="img/bx-world.svg" alt="Pagina Web">Sitio Oficial</a>
+                <p class="pfoot">
+                   <a href="http://www.samuelgoldwynfilms.com/minamata/" target="_blank"><i class="fa-solid fa-earth-americas"></i>Sitio Oficial</a>
                 </p>
             </div>
         </div>

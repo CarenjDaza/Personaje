@@ -7,7 +7,7 @@ h1{font-family: 'Lobster', cursive;}
 p{font-family: 'Arvo', serif;}
 p{color:var(--dark-color);}
 h1{font-size: 120px;}
-h2{color:var(--beige-color)}
+h2{color:var(--oscuro-color)}
 h2{font-family: 'Arvo', serif;}
 h2{font-style: italic ;}
 h2{font-weight: bold;}
@@ -16,7 +16,7 @@ body{background-color: var(--beige-color);}
 
 
 :root{
-  --beige-color: #EBE3A3;
+  --beige-color: #fcf7d6;
   --dark-color: #070707;
   --white-color:#faf8f8;
   --gray-color: rgb(204,212,222);
@@ -25,21 +25,18 @@ body{background-color: var(--beige-color);}
   --fondo-color: #A0A48A;
   --azuloscuro-color: #3D425F; 
 }
-
 .header{
   background-image: url(../img/Personajes2.jpg);
   height: 12rem;
   width: 100%;
   text-align: center;
 }
-
 .header h1{
   color: var(--oscuro-color);
   text-shadow: 2px 2px 2px var(--dark-color);
   border: var(--white-color);
   margin: 0px auto;
 }
-
 .title{
   background-color: rgba(204,212,222,0.6);
   width: 100%;
@@ -61,20 +58,17 @@ body{background-color: var(--beige-color);}
   display: flex;
   margin-top: 0.5rem;
 }
-
 .item:hover{
   color: rgba(255,255,255, 0.4);
   border-bottom: 2px solid var(--gray-color);
   transform: scale(1.1);
   transition: transform ;
 }
-
 .busqueda{
   display: flex;
   justify-content: flex-end;
   margin: 1rem;
 }
-
 .titulo2{
   text-align: center;
   color: var(--azuloscuro-color);
@@ -99,21 +93,27 @@ body{background-color: var(--beige-color);}
   text-align: justify;
 }
 #quien-es{
+  width: 80rem;
   display: flex;
+  margin: 0px auto;
   border: 2px groove var(--azuloscuro-color);
+  background:linear-gradient(#79AFAD,#B8DCDA); 
+  border-radius: 80px 0 80px 0;
+  box-shadow: 2px 2px 6px var(--dark-color);
 }
 .seccion{
-  margin: 2rem;
+  margin: 1.5rem;
   display: flex;
+  align-items: center;
   flex-basis: 45%;
 }
 .seccion img{
-  border-radius: 30%;
+  border-radius: 40%;
   border: 2px solid var(--azuloscuro-color);
-  box-shadow: 1px 1px 2px var(--oscuro-color);
-  margin: 1rem;
-  width: 250px ;
-  height: 300px;
+  box-shadow: -1px -1px 2px var(--oscuro-color);
+  margin: 0.2rem;
+  width: 200px ;
+  height: 250px;
 }
 .quien_es{
   display: flex;
@@ -123,4 +123,93 @@ body{background-color: var(--beige-color);}
 .quien_es h2{
   color: var(--azuloscuro-color);
   text-align: center;
+  text-shadow: 1px 1px 2px var(--white-color);
+  margin-top: 2px;
+}
+.form{
+  display: flex;
+  margin: 2px auto;
+  height: 90vh;
+  border: 1px 1px 2px var(--oscuro-color);
+  background-color: var(--gray-color);
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 1px 1px 3px var(--dark-color);
+  border-radius: 5px;
+  padding: 20px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.form-label{
+  font-weight: bold;
+  margin: 10px 0px;
+ 
+}
+.form-input{
+  border: 3px solid var(--gray-color);
+  padding: 0.1rem;
+  outline: none;
+  box-shadow: 1px 1px 2px var(--azuloscuro-color);
+}
+.btn-azul{
+  padding: 0.5rem;
+  margin: 0px 0.5rem;
+  font-weight: 500;
+  border: 2px solid var(--gray-color);
+  cursor: pointer;
+  background-color: var(--blue-color);
+  box-shadow: 1px 1px 0.5px var(--dark-color);
+  }
+.section1{
+  flex-basis: 45%;
+  margin: 0px 1rem;
+}
+.botones{
+  display: flex;
+  justify-content: center;
+}
+.radio{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+.select{
+  margin: 8px 0px;
+  flex-basis: 50%;
+}
+.btn{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 1px;
+}
+.footer{
+  background-color: var(--oscuro-color);
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  
+}
+.box-footer{
+  display: flex;
+  justify-content: space-around;
+
+}
+.foot{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  color: var(--beige-color);
+
+}
+.foot i{
+  color: var(--beige-color);
+  margin: 0px 3px;
+}
+.foot a{
+  color: var(--beige-color);
+  text-decoration: none;
+  margin: 0px 10px;
 }
