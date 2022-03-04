@@ -4,9 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
     <meta name="Caren Daza" content="Mi personaje" />
     <title>Mi Personaje</title>
     <script src="https://kit.fontawesome.com/74a1aab293.js" crossorigin="anonymous"></script>
@@ -18,8 +17,9 @@
 <body>
 
     <header class="header">
-        <H1>Johnny Depp</H1>
-        <img src="img/Personajes Johnny Depp.png">
+        <div class="title">
+        <H1 class="text-header">Johnny Depp</H1>
+        </div>  
     </header>
 
     <NAv class="nav">
@@ -27,7 +27,10 @@
             <a href="index.html" class="item">Quien Es Johnny Depp</a>
             <a href="peliculas.html" class="item">Peliculas</a>
             <a href="carrera.html" class="item">Mas sobre Johnny</a>
-            </div>
+        </div>
+    </NAv>
+    <main>
+        <section>
             <div class="search">
                 <form action="#" name="buscar" method="get" target="_self"> 
                     <label for="buscar">Buscar</label>
@@ -35,8 +38,7 @@
                         <input type="submit" value="ir">
                 </form>
             </div>
-    </NAv>
-    <main>
+        </section>
         <section id="biografia">
             <H2>¿Quien es Johnny Depp?</H2>
             <p>
