@@ -12,6 +12,7 @@ h2{font-family: 'Arvo', serif;}
 h2{font-style: italic ;}
 h2{font-weight: bold;}
 h2{font-size: 30px;}
+body{background-color: var(--beige-color);}
 
 
 :root{
@@ -22,6 +23,7 @@ h2{font-size: 30px;}
   --blue-color: #90E7FC;
   --oscuro-color: #082032;
   --fondo-color: #A0A48A;
+  --azuloscuro-color: #3D425F; 
 }
 
 .header{
@@ -29,7 +31,6 @@ h2{font-size: 30px;}
   height: 12rem;
   width: 100%;
   text-align: center;
-  
 }
 
 .header h1{
@@ -53,7 +54,6 @@ h2{font-size: 30px;}
 .nav1{
   display: flex;
   justify-content: space-around;
-  
 }
 .nav1 a{
   color: var(--white-color);
@@ -67,4 +67,60 @@ h2{font-size: 30px;}
   border-bottom: 2px solid var(--gray-color);
   transform: scale(1.1);
   transition: transform ;
+}
+
+.busqueda{
+  display: flex;
+  justify-content: flex-end;
+  margin: 1rem;
+}
+
+.titulo2{
+  text-align: center;
+  color: var(--azuloscuro-color);
+  text-shadow: 2px 2px 2px var(--gray-color);
+}
+#biografia{
+  display: flex;
+  justify-content: center;
+}
+#biografia img{
+  border-radius: 50%;
+  border: 2px solid var(--azuloscuro-color);
+  box-shadow: 1px 1px 2px var(--oscuro-color);
+  margin: 1rem;
+  width: 300px ;
+  height: 300px;
+}
+.biografia{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  text-align: justify;
+}
+#quien-es{
+  display: flex;
+  border: 2px groove var(--azuloscuro-color);
+}
+.seccion{
+  margin: 2rem;
+  display: flex;
+  flex-basis: 45%;
+}
+.seccion img{
+  border-radius: 30%;
+  border: 2px solid var(--azuloscuro-color);
+  box-shadow: 1px 1px 2px var(--oscuro-color);
+  margin: 1rem;
+  width: 250px ;
+  height: 300px;
+}
+.quien_es{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.quien_es h2{
+  color: var(--azuloscuro-color);
+  text-align: center;
 }
