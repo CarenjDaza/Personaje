@@ -91,6 +91,19 @@ body{background-color: var(--beige-color);}
   flex-direction: column;
   margin: 1rem;
   text-align: justify;
+  flex-basis: 60%;
+}
+.peliculas{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.peli{
+  flex-basis: 45%;
+}
+.peli2{
+  width: 1200px;
+  margin: 0px auto;
 }
 #quien-es{
   width: 80rem;
@@ -129,7 +142,7 @@ body{background-color: var(--beige-color);}
 .form{
   display: flex;
   margin: 2px auto;
-  height: 90vh;
+  height: 80vh;
   border: 1px 1px 2px var(--oscuro-color);
   background-color: var(--gray-color);
   max-width: 800px;
@@ -190,19 +203,16 @@ body{background-color: var(--beige-color);}
   width: 100%;
   height: 100%;
   margin-top: 30px;
-  
 }
 .box-footer{
   display: flex;
   justify-content: space-around;
-
 }
 .foot{
   display: flex;
   flex-direction: column;
   justify-items: center;
   color: var(--beige-color);
-
 }
 .foot i{
   color: var(--beige-color);
@@ -212,4 +222,96 @@ body{background-color: var(--beige-color);}
   color: var(--beige-color);
   text-decoration: none;
   margin: 0px 10px;
+}
+.table{
+max-width: 500px;
+max-height: 900px;
+width: 100%;
+background-color: var(--gray-color);
+margin: 1rem auto;
+}
+.table th{
+  background-color: var(--blue-color);
+  font-size: 20px;
+  text-shadow: 1px 1px 2px var(--oscuro-color);
+}
+.table img{
+  width: 150px;
+  height: 150px;
+  margin: 2rem ;
+  border-radius: 50%;
+}
+.table td{
+    color: var(--dark-color);
+    margin: 2rem;
+    text-align: center;
+}
+
+/*formulario peliculas*/
+
+.titulo23{
+  display: flex;
+}
+.formpel{
+  display: flex;
+  justify-content: flex-start;
+  margin: 2px 80px;
+  height: 80vh;
+  border: 1px 1px 2px var(--oscuro-color);
+  background-color: var(--gray-color);
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 1px 1px 3px var(--dark-color);
+  border-radius: 5px;
+  padding: 2px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.form-label{
+  font-weight: bold;
+  margin: 10px 0px;
+ 
+}
+.form-input{
+  border: 3px solid var(--gray-color);
+  padding: 0.1rem;
+  outline: none;
+  box-shadow: 1px 1px 2px var(--azuloscuro-color);
+}
+.btn-azul{
+  padding: 0.5rem;
+  margin: 0px 0.5rem;
+  font-weight: 500;
+  border: 2px solid var(--gray-color);
+  cursor: pointer;
+  background-color: var(--blue-color);
+  box-shadow: 1px 1px 0.5px var(--dark-color);
+  }
+.section1{
+  flex-basis: 45%;
+  margin: 0px 1rem;
+}
+.botones{
+  display: flex;
+  justify-content: center;
+}
+.radio{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+.select{
+  margin: 8px 0px;
+  flex-basis: 50%;
+}
+.btn{
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 1px;
+}
+.formulario{
+  margin: 0px auto;
 }
