@@ -89,10 +89,19 @@ body{background-color: var(--beige-color);}
 .biografia{
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 2rem;
   text-align: justify;
-  flex-basis: 60%;
+
 }
+.carrera{
+display: flex;
+width: 100%;
+}
+.carrera img{
+  width: 675px;
+  height: 250px;
+}
+
 .peliculas{
   display: flex;
   flex-wrap: wrap;
@@ -224,7 +233,7 @@ body{background-color: var(--beige-color);}
   margin: 0px 10px;
 }
 .table{
-max-width: 500px;
+max-width: 480px;
 max-height: 900px;
 width: 100%;
 background-color: var(--gray-color);
@@ -236,8 +245,8 @@ margin: 1rem auto;
   text-shadow: 1px 1px 2px var(--oscuro-color);
 }
 .table img{
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 2rem ;
   border-radius: 50%;
 }
@@ -245,6 +254,9 @@ margin: 1rem auto;
     color: var(--dark-color);
     margin: 2rem;
     text-align: center;
+}
+.table tr{
+  height: 3rem;
 }
 
 /*formulario peliculas*/
@@ -315,3 +327,23 @@ margin: 1rem auto;
 .formulario{
   margin: 0px auto;
 }
+
+/*carrera*/
+.banner {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+}
+.banner img{
+  width: 269px;
+  height: 270px;
+}
+.premios{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+.table2{
+  flex-basis: 45%;
+}
+
