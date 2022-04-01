@@ -13,7 +13,8 @@ h2{font-family: 'Arvo', serif;}
 h2{font-style: italic ;}
 h2{font-weight: bold;}
 h2{font-size: 30px;}
-body{background-color: var(--beige-color);}
+body{background-color: var(--beige-color);
+}
 
 
 :root{
@@ -32,7 +33,7 @@ body{background-color: var(--beige-color);}
   background-image: url(../img/Personajes2.jpg);
   height: 12rem;
   text-align: center;
-  
+  width: 100%;
 }
 .header h1{
   
@@ -40,27 +41,25 @@ body{background-color: var(--beige-color);}
   text-shadow: 2px 2px 2px var(--dark-color);
   border: var(--white-color);
   margin: 0px auto;
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 .title{
   background-color: rgba(204,212,222,0.6);
   height: 13rem;
 }
-.nav{
- 
+nav{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: var(--oscuro-color);
-  height: 40px;
   width: 100%;
 }
-.nav1{
-  display: flex;
-  justify-content: space-around;
-}
+
 .nav1 a{
   color: var(--white-color);
   text-decoration: none;
   display: flex;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0.5rem;
   font-size: 14px;
 }
 .item:hover{
@@ -71,7 +70,7 @@ body{background-color: var(--beige-color);}
 }
 .busqueda{
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   margin: 1rem;
 }
 .titulo2{
@@ -106,7 +105,6 @@ body{background-color: var(--beige-color);}
   flex-direction: column;
   margin: 2rem;
   text-align: justify;
-
 }
 .carrera{
 display: flex;
@@ -130,7 +128,7 @@ width: 100%;
   margin: 0px auto;
 }
 #quien-es{
-  width: 80vh;
+  width: 85%;
   display: flex;
   flex-direction: column;
   margin: 0px auto 10px auto;
@@ -142,11 +140,12 @@ width: 100%;
 .seccion{
   margin: 12px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-basis: 45%;
+  flex-basis: 40%;
 }
 .seccion img{
-  border-radius: 40%;
+  border-radius: 30%;
   border: 2px solid var(--azuloscuro-color);
   box-shadow: -1px -1px 2px var(--oscuro-color);
   margin: 0.2rem;
@@ -167,11 +166,12 @@ width: 100%;
 }
 .form{
   display: flex;
+  flex-direction: column;
   margin: 2px auto;
-  height: 100vh;
+  height: 100%;
   border: 1px 1px 2px var(--oscuro-color);
   background-color: var(--gray-color);
-  max-width: 800px;
+  max-width: 100%;
   width: 80%;
   box-shadow: 1px 1px 3px var(--dark-color);
   border-radius: 5px;
@@ -184,7 +184,7 @@ width: 100%;
 }
 .form-label{
   font-weight: bold;
-  margin: 10px 0px;
+  margin: 5px 0px;
  
 }
 .form-input{
@@ -234,22 +234,22 @@ width: 100%;
 }
 .box-footer{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .foot{
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
   color: var(--beige-color);
 }
 .foot i{
   color: var(--beige-color);
-  margin: 0px 3px;
+  margin: 2px 3px;
 }
 .foot a{
+  font-size: 20px;
   color: var(--beige-color);
   text-decoration: none;
-  margin: 0px 10px;
+  margin: 3px 12px;
 }
 .table{
 max-width: 480px;
@@ -387,7 +387,25 @@ margin: 1rem auto;
         flex-direction: row;
       }
       .form{
+        display: flex;
+        flex-direction: row;
         height: 90%;
+      }
+      .foot{
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        color: var(--beige-color);
+      }
+      .foot i{
+        color: var(--beige-color);
+        margin: 2px 3px;
+      }
+      .foot a{
+        font-size: 10px;
+        color: var(--beige-color);
+        text-decoration: none;
+        margin: 3px 12px;
       }
  }
  @media screen and (min-width:1024px) {
