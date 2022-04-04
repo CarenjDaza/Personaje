@@ -36,7 +36,7 @@ body{background-color: var(--beige-color);
   "main" auto
   "peliculas" auto
   "pelis" auto
-  "footer" 200px;
+  "footer" 300px;
 }
 .header{
     background-image: url(../img/Personajes2.jpg);
@@ -98,7 +98,7 @@ body{background-color: var(--beige-color);
   .nav1 a{
     color: var(--white-color);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 17px;
     margin: 0 0.5rem;
   }
   .item:hover{
@@ -142,22 +142,24 @@ footer{
     }
     .table th{
       background-color: var(--blue-color);
-      font-size: 20px;
+      font-size: 24px;
       text-shadow: 1px 1px 2px var(--oscuro-color);
     }
     .table img{
       width: 100px;
       height: 100px;
-      margin: 2rem ;
+      margin: 12px ;
       border-radius: 50%;
     }
     .table td{
         color: var(--dark-color);
-        margin: 2rem;
+        margin: 8px;
         text-align: center;
+        font-size: 18px;
     }
     .table tr{
-      height: 3rem;
+      height: 0.5rem;
+      font-size: 18px;
     }
     
     /*formulario peliculas*/
@@ -169,12 +171,13 @@ footer{
     
     .formpel{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin: 5px auto;
-    height: 100%;
+    height: 110%;
     border: 1px 1px 2px var(--oscuro-color);
     background-color: var(--gray-color);
-    width: 90%;
+    width: 60%;
     box-shadow: 1px 1px 3px var(--dark-color);
     border-radius: 5px;
     padding: 2px;
@@ -186,7 +189,7 @@ footer{
   }
   .form-label{
     font-weight: bold;
-    margin: 10px 0px;
+    margin: 5px 0px 5px 0px;
    
   }
   .form-input{
@@ -229,3 +232,40 @@ footer{
       .formulario{
         margin: 0px auto;
       }
+@media screen and (min-width:768px){
+  
+.container{
+  display: grid;
+  grid-template:
+  "header" 200px
+  "nav" 50px
+  "busqueda" 50px
+  "main" auto
+  "peliculas" auto
+  "pelis" auto
+  "footer" 70px;
+}
+.nav1{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .box-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav1 a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0.3rem 0.5rem;
+  }
+  .busqueda{
+    margin: 2rem;
+    grid-area: busqueda;
+  }
+  .formpel{
+    flex-direction: row;}
+}
+  
